@@ -1,0 +1,120 @@
+:root {
+    --primary-blue: #1E2A78;
+    --accent-green: #3CB846;
+    --accent-yellow: #FCDD00;
+    --light-gray: #F8F8F8;
+    --dark-text: #333333;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark-text); 
+    background-color: #f0f2f5; 
+}
+
+h2 {
+    color: var(--primary-blue); 
+    font-weight: bold;
+}
+
+.logo-img {
+    height: 35px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.main-header {
+    background-color: var(--light-gray);
+    margin-bottom: 0; 
+}
+
+.full-width-banner {
+    width: 100%;
+    height: 250px; 
+    background-image: url('../img/banner.png'); 
+    background-color: var(--primary-blue);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 30px; 
+}
+
+.article-card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease-in-out;
+    height: 350px; 
+    
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 8px; 
+}
+
+/* Efecto al pasar el cursor */
+.article-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Contenedor del texto (cuerpo de la tarjeta) */
+.article-card .card-body {
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    padding: 20px; 
+    
+    /* Fondo semitransparente azul oscuro */
+    background-color: rgba(30, 42, 120, 0.85); 
+    border-top: 3px solid var(--accent-green); 
+}
+
+.article-card .card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--accent-yellow); 
+}
+
+/* Estilo para la breve descripción */
+.article-card .description-text {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.article-card .btn-primary {
+    background-color: var(--accent-green); 
+    border-color: var(--accent-green);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.article-card .btn-primary:hover {
+    background-color: #2e9b38; 
+    border-color: #2e9b38;
+}
+
+
+footer {
+    background-color: var(--primary-blue); 
+    color: white; 
+    border-top: 5px solid var(--accent-green); 
+}
+
+footer a {
+    color: white !important; 
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--accent-yellow) !important;
+}
