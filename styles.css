@@ -31,7 +31,7 @@ h2 {
 }
 
 .main-header {
-    background-color: var(--light-gray);
+    background-color: transparent;
     margin-bottom: 0;
     padding-top: 1rem; 
     padding-bottom: 1rem;
