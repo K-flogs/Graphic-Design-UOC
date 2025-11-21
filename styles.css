@@ -6,12 +6,7 @@
     --dark-text: #333333;
 }
 
-/* ================================== */
-/* 1. ESTILOS BASE Y FUENTE */
-/* ================================== */
-
 body {
-    /* Fuente legible para el cuerpo del texto */
     font-family: Arial, sans-serif; 
     color: var(--dark-text); 
     background-color: #f0f2f5;
@@ -19,7 +14,6 @@ body {
     padding: 0;
 }
 
-/* Aplicar Bowlby One solo a elementos de titular */
 h1, h2, h3, h4, .article-card .card-title {
     font-family: 'Bowlby One', cursive; 
     font-weight: normal; 
@@ -29,9 +23,6 @@ h2 {
     color: var(--primary-blue); 
 }
 
-/* ================================== */
-/* 2. HEADER Y BANNER (Full Width) */
-/* ================================== */
 .logo-img {
     height: 35px;
     width: auto;
@@ -41,16 +32,20 @@ h2 {
 
 .main-header {
     background-color: var(--light-gray);
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+}
+
+.main-header .navbar-brand {
+    display: inline-block; 
+    padding: 0;
 }
 
 .full-width-banner {
-    /* 100vw para ocupar el ancho total del viewport */
     width: 100vw;
     margin-left: calc(50% - 50vw); 
     height: 250px; 
-    
-    /* RUTA CORREGIDA PARA LA ESTRUCTURA RAÍZ */
     background-image: url('img/banner.png'); 
     background-color: var(--primary-blue);
     background-size: contain; 
@@ -64,9 +59,6 @@ h2 {
     margin-bottom: 30px; 
 }
 
-/* ================================== */
-/* 3. ESTILOS DE ARTÍCULOS Y VIDEO */
-/* ================================== */
 .article-card {
     margin-bottom: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
@@ -81,13 +73,11 @@ h2 {
     border-radius: 8px; 
 }
 
-/* Efecto al pasar el cursor de tarjeta */
 .article-card:hover {
     transform: translateY(-8px); 
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* Contenedor del texto (cuerpo de la tarjeta) */
 .article-card .card-body {
     position: absolute;
     bottom: 0; 
@@ -105,7 +95,6 @@ h2 {
     color: var(--accent-yellow); 
 }
 
-/* Estilo para la breve descripción */
 .article-card .description-text {
     font-size: 0.95rem;
     margin-bottom: 15px;
@@ -124,7 +113,6 @@ h2 {
     border-color: #2e9b38;
 }
 
-/* Efecto Hover para el video */
 .ratio {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 8px;
@@ -137,9 +125,14 @@ h2 {
     cursor: pointer; 
 }
 
-/* ================================== */
-/* 4. ESTILOS DEL FOOTER */
-/* ================================== */
+.article-separator {
+    height: 3px; 
+    background-color: var(--accent-green); 
+    width: 100%; 
+    border: none;     
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 footer {
     background-color: var(--primary-blue); 
     border-top: 5px solid var(--accent-green); 
