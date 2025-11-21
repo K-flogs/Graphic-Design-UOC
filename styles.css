@@ -38,8 +38,10 @@ h2 {
 }
 
 .main-header .navbar-brand {
+    background-color: var(--light-gray);
     display: inline-block; 
     padding: 0;
+    background-color: transparent
 }
 
 .full-width-banner {
