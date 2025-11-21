@@ -10,7 +10,9 @@
 body {
     font-family: Arial, sans-serif;
     color: var(--dark-text); 
-    background-color: #f0f2f5; 
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -31,7 +33,7 @@ h2 {
 }
 
 .full-width-banner {
-    width: 100%;
+    width: 100vw;
     height: 250px; 
     background-image: url('../img/banner.png'); 
     background-color: var(--primary-blue);
@@ -89,6 +91,7 @@ h2 {
 .article-card .description-text {
     font-size: 0.95rem;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .article-card .btn-primary {
@@ -103,6 +106,17 @@ h2 {
     border-color: #2e9b38;
 }
 
+.ratio {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.ratio:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important; 
+    cursor: pointer; 
+}
 
 footer {
     background-color: var(--primary-blue); 
