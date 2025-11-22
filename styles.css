@@ -47,7 +47,7 @@ h2 {
 .full-width-banner {
     width: 100vw;
     margin-left: calc(50% - 50vw); 
-    height: 250px; 
+    height: 450px; 
     background-image: url('img/banner.png'); 
     background-color: var(--primary-blue);
     background-size: contain; 
