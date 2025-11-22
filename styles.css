@@ -21,7 +21,7 @@ h1, h2, h3, h4, .article-card .card-title {
 }
 
 h3 {
-    color: var(--primary-blue), #1E2A78; 
+    color: #1E2A78, var(--primary-blue); 
 }
 
 
